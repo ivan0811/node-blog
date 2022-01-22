@@ -1,0 +1,161 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name": "ivan",
+    "username": "ivan",
+    "password": "12345678"
+}
+
+###
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "ivan",
+    "password": "12345678"
+}
+
+###
+
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+###
+
+PATCH  http://localhost:3000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+
+###
+PATCH http://localhost:3000/reset-password
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+Content-Type: application/json
+
+{
+    "username" : "ivan",
+    "password" : "ivan1"
+}
+
+###
+GET http://localhost:3000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+###
+POST http://localhost:3000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+Content-Type: application/json
+
+{
+    "name" : "user2",
+    "username" : "user2",
+    "password" : "12345678"
+}
+
+###
+
+PATCH  http://localhost:3000/user/613c963609d0b3fba97cc793
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+Content-Type: application/json
+
+{
+    "role" : "admin"
+}
+
+###
+
+DELETE http://localhost:3000/user/613c963609d0b3fba97cc793
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+###
+GET http://localhost:3000/category
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+###
+GET http://localhost:3000/category/613d8d91c6edbc543a23c28f
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+###
+POST http://localhost:3000/category
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+Content-Type: application/json
+
+{
+    "name": "Computer"
+}
+
+###
+PATCH http://localhost:3000/category/613d8e2effeaf2f763849b41
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+Content-Type: application/json
+
+{
+    "name": "Game"
+}
+
+###
+DELETE http://localhost:3000/category/613dabeb9884138849a2c569
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+###
+GET http://localhost:3000/article
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+###
+GET http://localhost:3000/article/613dabd09884138849a2c55c
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+###
+POST http://localhost:3000/article
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+Content-Type: application/json
+
+{
+    "category": "613dab839884138849a2c559",
+    "title": "Algorithm",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+}
+
+###
+PATCH http://localhost:3000/article/613dabd09884138849a2c55c
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+Content-Type: application/json
+
+{
+    "category": "613db00b431edd9490ad6535",
+    "title": "Algorithm",
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+}
+
+###
+DELETE http://localhost:3000/article/613d95485326460b35508868
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+###
+GET http://localhost:3000/comment
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+
+###
+POST http://localhost:3000/comment
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+Content-Type: application/json
+
+{
+    "article": "613dabd09884138849a2c55c",    
+    "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+}
+
+###
+PATCH http://localhost:3000/comment/613db7c970c6692d5d9edc0e
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY
+Content-Type: application/json
+
+{
+    "article": "613db72dd8c86ba80c3306cf",    
+    "content": "test"
+}
+
+###
+DELETE http://localhost:3000/comment/613dbcc1d09e7b68dd881db9
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.IjYxM2EyYzRhOWNlNzk4ZTMzYTgxOWYxMCI.dBJtYsnWyjWOXlSnveiIpjscJogzC-r8P2r24t3PJBY

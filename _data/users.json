@@ -1,0 +1,12 @@
+[
+    {
+        "_id" : "612dd163279d37e28fec9b60",
+        "username" : "user1",
+        "password" : "$2b$10$UrMsNNShj9hX.tVHdf7WmeaoCJ7JXG8.RaKV2.IWSFQ8usxK0D2MS"
+    }, 
+    {
+        "_id" : "612e480d3daae3e5d1880e9d",
+        "username" : "user2",
+        "password" : "$2b$10$MeERuoipdFa5pfE61pQa0.KRdYpXWVCiW7M/ShMDrW6gAmzDTJSiK"
+    }
+]
